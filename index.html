@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <div id="time">
+
+      </div>
+    <form id="form">
+      <input id="searchbar" type="text" />
+    </form>
+    <button type="submit" class="btn btn-success" form="form" value="Submit">Submit</button>
+    <div id="pastSearch">
+        
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 id="city" class="card-title"></h5>
+          <p class="card-text">Temperature:<span id="temp"></span></p>
+          <p class="card-text">Humidity:<span id="humid"></span></p>
+          <p class="card-text">Wind Speed:<span id="wind"></span></p>
+          <p class="card-text">UV Index:<span id="uvindex"></span></p>
+        </div>
+      </div>
+
+      <div class="row">
+
+      </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
