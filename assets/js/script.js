@@ -65,6 +65,7 @@ function getWeather(lat,lon) {
         humidEl.text(data.current.humidity)
         windEl.text(data.current.wind_speed)
         uvindexEl.text(data.current.uvi)
+        // jquery.style to change background for uvindexel or custom css and change class of element in a if statement//
         fiveDayRow.empty();
         for (let i = 1; i < 6; i++) {
             const element = data.daily[i];
