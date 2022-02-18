@@ -40,7 +40,7 @@ function getLocation(event, city) {
         city = $(this).text()
     }
     console.log(city)
-    var url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${apiKey}`
+    var url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${apiKey}`
     fetch(url).then(function(response) {
         return response.json()
     }).then(function(data) {
@@ -71,7 +71,7 @@ function getWeather(lat,lon) {
             const element = data.daily[i];
             
             var fiveDayEl = `<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="http://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png" alt="Card image cap">
+            <img class="card-img-top" src="https://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text">Temperature:${element.temp.max}</p>
               <p class="card-text">Humidity:${element.humidity}</p>
